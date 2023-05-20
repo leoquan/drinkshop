@@ -1,0 +1,354 @@
+﻿<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>BLU Mini - Food & Drink</title>
+    <meta name="description" content="">
+    <meta name="robots" content="noindex, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <!-- all css here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/chosen.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/simple-line-icons.css">
+    <link rel="stylesheet" href="assets/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    @RenderSection("css", required: false)
+</head>
+<body>
+    <!-- header start -->
+    <header class="header-area">
+        <div class="header-top black-bg">
+            <div class="container">
+                <div class="row" style="display:none">
+                    <div class="col-lg-4 col-md-4 col-12 col-sm-4">
+                        <div class="welcome-area">
+                            <p>Xin chào bạn Leo Quân </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12 col-sm-8">
+                        <div class="account-curr-lang-wrap f-right">
+                            <ul>
+                                <li class="top-hover">
+                                    <a href="#">Language: (Việt) <i class="ion-chevron-down"></i></a>
+                                    <ul>
+                                        <li><a href="#">English </a></li>
+                                    </ul>
+                                </li>
+                                <li class="top-hover">
+                                    <a href="#">Setting  <i class="ion-chevron-down"></i></a>
+                                    <ul>
+                                        <li><a asp-controller="Html" asp-action="wishlist">Wishlist  </a></li>
+                                        <li><a asp-controller="Html" asp-action="loginregister">Login</a></li>
+                                        <li><a asp-controller="Html" asp-action="loginregister">Register</a></li>
+                                        <li><a asp-controller="Html" asp-action="myaccount">my account</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-12 col-sm-4">
+                        <div class="logo">
+                            <a asp-action="Index" asp-controller="Home">
+                                <img alt="" src="assets/img/logo/logo.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-8 col-12 col-sm-8">
+                        <div class="header-middle-right f-right">
+                            <div class="header-login">
+                                <a asp-controller="Html" asp-action="loginregister">
+                                    <div class="header-icon-style">
+                                        <i class="icon-user icons"></i>
+                                    </div>
+                                    <div class="login-text-content">
+                                        <p>Register <br> or <span>Sign in</span></p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="header-wishlist">
+                                <a asp-controller="Html" asp-action="wishlist">
+                                    <div class="header-icon-style">
+                                        <i class="icon-heart icons"></i>
+                                    </div>
+                                    <div class="wishlist-text">
+                                        <p>Your <br> <span>Wishlist</span></p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="header-cart">
+                                <a href="#">
+                                    <div class="header-icon-style">
+                                        <i class="icon-handbag icons"></i>
+                                        <span class="count-style">02</span>
+                                    </div>
+                                    <div class="cart-text">
+                                        <span class="digit">My Cart</span>
+                                        <span class="cart-digit-bold">$209.00</span>
+                                    </div>
+                                </a>
+                                <div class="shopping-cart-content">
+                                    <ul>
+                                        <li class="single-shopping-cart">
+                                            <div class="shopping-cart-img">
+                                                <a href="#"><img alt="" src="assets/img/cart/cart-1.jpg"></a>
+                                            </div>
+                                            <div class="shopping-cart-title">
+                                                <h4><a href="#">Phantom Remote </a></h4>
+                                                <h6>Qty: 02</h6>
+                                                <span>$260.00</span>
+                                            </div>
+                                            <div class="shopping-cart-delete">
+                                                <a href="#"><i class="ion ion-close"></i></a>
+                                            </div>
+                                        </li>
+                                        <li class="single-shopping-cart">
+                                            <div class="shopping-cart-img">
+                                                <a href="#"><img alt="" src="assets/img/cart/cart-2.jpg"></a>
+                                            </div>
+                                            <div class="shopping-cart-title">
+                                                <h4><a href="#">Phantom Remote</a></h4>
+                                                <h6>Qty: 02</h6>
+                                                <span>$260.00</span>
+                                            </div>
+                                            <div class="shopping-cart-delete">
+                                                <a href="#"><i class="ion ion-close"></i></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="shopping-cart-total">
+                                        <h4>Shipping : <span>$20.00</span></h4>
+                                        <h4>Total : <span class="shop-total">$260.00</span></h4>
+                                    </div>
+                                    <div class="shopping-cart-btn">
+                                        <a asp-controller="Html" asp-action="cartpage">view cart</a>
+                                        <a asp-controller="Html" asp-action="checkout">checkout</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom transparent-bar black-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-12">
+                        <div class="main-menu">
+                            <nav>
+                                <ul>
+                                    <li><a asp-action="Index" asp-controller="Home">Home</a></li>
+                                    <li><a asp-controller="Html" asp-action="aboutus">about</a></li>
+                                    <li class="mega-menu-position top-hover">
+                                        <a asp-controller="Html" asp-action="shop">shop <i class="ion-chevron-down"></i></a>
+                                        <ul class="mega-menu">
+                                            <li>
+                                                <ul>
+                                                    <li class="mega-menu-title"><a href="#">Categories 01</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">salad</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">sandwich</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">bread</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">steak</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">tuna steak</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">spaghetti </a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <ul>
+                                                    <li class="mega-menu-title"><a href="#">Categories 02</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">rice</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">pizza</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">hamburger</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">eggs</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">sausages</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">apple juice</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <ul>
+                                                    <li class="mega-menu-title"><a href="#">Categories 03</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">milk</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">grape juice</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">cookie</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">candy</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">cake</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">cupcake</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <ul>
+                                                    <li class="mega-menu-title"><a href="#">Categories 04</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">pie</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">stoberry</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">sandwich</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">bread</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">steak</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">hamburger</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="top-hover">
+                                        <a asp-controller="Html" asp-action="blogrightsidebar">blog <i class="ion-chevron-down"></i></a>
+                                        <ul class="submenu">
+                                            <li><a asp-controller="Html" asp-action="blog">Blog No sidebar</a></li>
+                                            <li><a asp-controller="Html" asp-action="blogrightsidebar">Blog sidebar</a></li>
+                                            <li><a asp-controller="Html" asp-action="blogdetails">Blog details</a></li>
+                                            <li><a asp-controller="Html" asp-action="blogdetailsgallery">Blog details gallery</a></li>
+                                            <li><a asp-controller="Html" asp-action="blogdetailsvideo">Blog details video</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="top-hover">
+                                        <a href="#">pages <i class="ion-chevron-down"></i></a>
+                                        <ul class="submenu">
+                                            <li><a asp-controller="Html" asp-action="aboutus">about us </a></li>
+                                            <li><a asp-controller="Html" asp-action="shop">shop Grid</a></li>
+                                            <li><a asp-controller="Html" asp-action="shoplist">shop list</a></li>
+                                            <li><a asp-controller="Html" asp-action="productdetails">product details</a></li>
+                                            <li><a asp-controller="Html" asp-action="cartpage">cart page</a></li>
+                                            <li><a asp-controller="Html" asp-action="checkout">checkout</a></li>
+                                            <li><a asp-controller="Html" asp-action="wishlist">wishlist</a></li>
+                                            <li><a asp-controller="Html" asp-action="myaccount">my account</a></li>
+                                            <li><a asp-controller="Html" asp-action="loginregister">login / register</a></li>
+                                            <li><a asp-controller="Html" asp-action="contact">contact</a></li>
+                                            <li><a asp-controller="Html" asp-action="testimonial">Testimonials</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a asp-controller="Html" asp-action="contact">contact us</a></li>
+                                    <li><a asp-controller="Html" asp-action="shop">burger</a></li>
+                                    <li><a asp-controller="Html" asp-action="shop">pizza</a></li>
+                                    <li><a asp-controller="Html" asp-action="shop">cold drink</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- mobile-menu-area-start -->
+        <div class="mobile-menu-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="mobile-menu">
+                            <nav id="mobile-menu-active">
+                                <ul class="menu-overflow" id="nav">
+                                    <li>
+                                        <a asp-controller="Home" asp-action="Index">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">pages</a>
+                                        <ul>
+                                            <li><a asp-controller="Html" asp-action="aboutus">about us </a></li>
+                                            <li><a asp-controller="Html" asp-action="shop">shop Grid</a></li>
+                                            <li><a asp-controller="Html" asp-action="shoplist">shop list</a></li>
+                                            <li><a asp-controller="Html" asp-action="productdetails">product details</a></li>
+                                            <li><a asp-controller="Html" asp-action="cartpage">cart page</a></li>
+                                            <li><a asp-controller="Html" asp-action="checkout">checkout</a></li>
+                                            <li><a asp-controller="Html" asp-action="wishlist">wishlist</a></li>
+                                            <li><a asp-controller="Html" asp-action="myaccount">my account</a></li>
+                                            <li><a asp-controller="Html" asp-action="loginregister">login / register</a></li>
+                                            <li><a asp-controller="Html" asp-action="contact">contact</a></li>
+                                            <li><a asp-controller="Html" asp-action="testimonial">Testimonials</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a asp-controller="Html" asp-action="shop"> Shop </a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Categories 01</a>
+                                                <ul>
+                                                    <li><a asp-controller="Html" asp-action="shop">salad</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">sandwich</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">bread</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">steak</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">tuna steak</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">spaghetti </a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Categories 02</a>
+                                                <ul>
+                                                    <li><a asp-controller="Html" asp-action="shop">rice</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">pizza</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">hamburger</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">eggs</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">sausages</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">apple juice</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Categories 03</a>
+                                                <ul>
+                                                    <li><a asp-controller="Html" asp-action="shop">milk</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">grape juice</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">cookie</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">candy</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">cake</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">cupcake</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Categories 04</a>
+                                                <ul>
+                                                    <li><a asp-controller="Html" asp-action="shop">pie</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">stoberry</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">sandwich</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">bread</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">steak</a></li>
+                                                    <li><a asp-controller="Html" asp-action="shop">hamburger</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a asp-controller="Html" asp-action="blogrightsidebar">blog</a>
+                                        <ul>
+                                            <li><a asp-controller="Html" asp-action="blog">Blog No sidebar</a></li>
+                                            <li><a asp-controller="Html" asp-action="blogrightsidebar">Blog sidebar</a></li>
+                                            <li><a asp-controller="Html" asp-action="blogdetails">Blog details</a></li>
+                                            <li><a asp-controller="Html" asp-action="blogdetailsgallery">Blog details gallery</a></li>
+                                            <li><a asp-controller="Html" asp-action="blogdetailsvideo">Blog details video</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a asp-controller="Html" asp-action="contact">contact us</a></li>
+                                    <li><a asp-controller="Html" asp-action="shop">burger</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- mobile-menu-area-end -->
+    </header>
+    @RenderBody()
+    <!-- all js here -->
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/ajax-mail.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+    @RenderSection("js", required: false)
+</body>
+</html>
